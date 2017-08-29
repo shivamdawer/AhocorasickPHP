@@ -1,5 +1,5 @@
 {
-    "name": "shivamdawer/AhocorasickPHP",
+    "name": "shivamdawer/ahocorasick-php",
     "type": "library",
     "description": "Ahocorasick Implementation with Tree Traversal using BFS, for PHP5 and PHP7",
     "keywords": ["ahocorasick","php","string match"],
