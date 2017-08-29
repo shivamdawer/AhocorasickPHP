@@ -42,17 +42,17 @@ public function __construct(AhocorasickTest $ahocorasickTest)
 ## API
 
 
-#### search
+#### search()
 
 Search keywords and positions per string. <br>
 Arguments :
 1. $textArray    - Array of strings
 2. $keywords     - Dictionary of keywords to search
 3. $keywordsName - Filename to use for cache created from dictionary
-4. $useCache     - To use cache or not
-5. $delimiters   - Array of valid delimiters at boundaries of searched keywowrds
-6. $sortByLength - Sort searched keywords by length : 'asc', 'desc', or false
-7. $trimText     - Trim input strings before search
+4. $useCache     - To use cache or not (optional)
+5. $delimiters   - Array of valid delimiters at boundaries of searched keywowrds (optional)
+6. $sortByLength - Sort searched keywords by length : 'asc', 'desc', or false (optional)
+7. $trimText     - Trim input strings before search (optional)
 
 **Usage**
 ```PHP
@@ -65,7 +65,7 @@ $matchResults = [['value' => 'sentence', 'len' => 8, 'start_pos' => 8, 'end_pos'
 var_dump($searchResults == $matchResults); // Returns true
 ```
 
-#### deleteCache
+#### deleteCache()
 
 Deletes cache file for dictionary
 
