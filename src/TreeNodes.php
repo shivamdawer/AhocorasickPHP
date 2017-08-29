@@ -5,11 +5,11 @@ namespace Ahocorasick\Src;
 /**
  * Description of Nodes
  */
-class TreeNodes implements Serializable {
+class TreeNodes { // implements Serializable
 
     public $nodesTransitions = array();
     /** @var string binary packed list of integers */
-    public $nodesParents = array();
+    public $nodesParents = ""; //array();
     public $chars = "";
     public $results = array();
     public $emptyArray = array();

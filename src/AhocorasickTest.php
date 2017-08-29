@@ -82,7 +82,7 @@ class AhocorasickTest
       $this->deleteCache($keywordsName);
     }
 
-    return $output;
+    return $results;
   }
 
   /**
@@ -115,12 +115,13 @@ class AhocorasickTest
   {
       $ret = [];
       foreach ($matches as $key => $match) {
-          $startCheck = $this->isExactMatchStart($text, $match['value'], $match['pos'], $delimiters);
-          $endCheck = $this->isExactMatchEnd($text, $match['value'], $match['pos'], $delimiters);
 
-          if ($startCheck && $endCheck) {
-              $ret[] = $match;
-          }
+        $startCheck = $this->isExactMatchStart($text, $match['value'], $match['end_pos'] + 1, $delimiters);
+        $endCheck = $this->isExactMatchEnd($text, $match['value'], $match['end_pos'] + 1, $delimiters);
+
+        if ($startCheck && $endCheck) {
+            $ret[] = $match;
+        }
       }
 
       return $ret;
