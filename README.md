@@ -11,13 +11,13 @@ Add to composer.json:
 
 ```PHP
 "require": {
-	"shivamdawer/ahocorasick-php": "dev-master"
+	"shivamdawer/ahocorasick-php": "dev-master" // or, 1.0
 },
 "repositories": [
     {
         "type": "vcs",
         "no-api": true,
-        "url": "git@github.com:shivamdawer/ahocorasick-php"
+        "url": "git@github.com:shivamdawer/ahocorasick-php.git"
     }
 ]
 ```

@@ -4,7 +4,7 @@
     "description": "Ahocorasick Implementation with Tree Traversal using BFS, for PHP5 and PHP7",
     "keywords": ["ahocorasick","php","string match"],
     "license": "MIT",
-    "homepage": "https://github.com/shivamdawer/AhocorasickPHP",
+    "homepage": "https://github.com/shivamdawer/ahocorasick-php",
     "authors": [
         {
             "name": "Shivam Dawer",
